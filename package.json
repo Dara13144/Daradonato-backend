@@ -1,0 +1,35 @@
+{
+  "name": "zoee-donation-backend",
+  "version": "1.0.0",
+  "description": "Production Live-Stream Donation Platform Backend for Zoee Donation",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node tests/runAllTests.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.8",
+    "axios": "^1.6.8",
+    "bakong-khqr": "^1.0.20",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "xss": "^1.0.15"
+  },
+  "keywords": [
+    "donation",
+    "livestream",
+    "khqr",
+    "aba-payway",
+    "supabase",
+    "express"
+  ],
+  "author": "Zoee Donation",
+  "license": "MIT"
+}

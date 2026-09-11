@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: zoee-backend
+    env: node
+    plan: free
+    region: singapore
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5005
+      - key: FRONTEND_URL
+        value: https://zoeedonate.com
+      - key: JWT_SECRET
+        generateValue: true
